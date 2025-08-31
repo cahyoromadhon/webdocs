@@ -30,7 +30,7 @@ const config: Config = {
         docs: {
           routeBasePath: 'docs',
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/your-github-user-or-org/your-repo-name',
+          editUrl: 'https://github.com/cahyoromadhon/webdocs',
         },
         blog: false,
         theme: { customCss: './src/css/custom.css' },
