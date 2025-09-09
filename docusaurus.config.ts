@@ -9,11 +9,11 @@ const config: Config = {
 
   future: { v4: true },
 
-  url: 'https://your-domain.com',
+  url: 'https://cahyorom.dev',
   baseUrl: '/',
 
-  organizationName: 'your-github-user-or-org',
-  projectName: 'your-repo-name',
+  organizationName: 'github.com/cahyoromadhon',
+  projectName: 'webdocs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

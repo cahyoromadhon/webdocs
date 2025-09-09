@@ -5,13 +5,16 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'Day 1: Basics 🚀',
+      label: 'Coinflip Program',
       collapsed: false,
       items: [
-        'day1/introduction',
-        'day1/module1-topik-utama',
-        'day1/module2-topik-lanjutan',
-        'day1/wrap-up',
+        'coinflip/intro',
+        'coinflip/init',
+        'coinflip/module',
+        'coinflip/struct',
+        'coinflip/functions',
+        'coinflip/deploy',
+        'coinflip/kesimpulan',
       ],
     },
     // Tambah kategori lain jika perlu, misalnya Hari 2, Hari 3, dsb.
