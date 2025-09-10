@@ -8,7 +8,7 @@ const sidebars: SidebarsConfig = {
       label: 'Coinflip Program',
       collapsed: false,
       items: [
-        'coinflip/intro',
+        'coinflip/academy',
         'coinflip/init',
         'coinflip/module',
         'coinflip/struct',
