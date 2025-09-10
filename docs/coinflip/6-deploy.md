@@ -24,6 +24,21 @@ Melakukan build secara berkala sangat disarankan, terutama setelah menambahkan f
 
 ## 2. Deploy ke Testnet
 
+
+> **Penting!**
+> Sebelum melakukan deploy, pastikan kamu sudah memiliki saldo SUI testnet di wallet-mu. Saldo ini diperlukan untuk membayar gas fee saat publish modul.
+> 
+> Kamu bisa mendapatkan SUI testnet gratis dengan melakukan klaim di faucet resmi Sui:
+> 
+> [Sui Testnet Faucet](https://faucet.testnet.sui.io/)
+> 
+> Jalankan perintah berikut di terminal untuk klaim:
+> ```bash
+> sui client faucet
+> ```
+> 
+> Setelah saldo masuk, baru lanjutkan ke proses deploy di bawah ini.
+
 Setelah program berhasil dibuild tanpa error, langkah selanjutnya adalah melakukan deploy ke jaringan testnet Sui agar program dapat dijalankan dan diuji secara publik.
 
 Gunakan perintah berikut untuk melakukan deploy:
@@ -34,7 +49,8 @@ sui client publish --gas-budget 100000000
 
 **Penjelasan:**
 - Perintah di atas akan meng-upload dan mendaftarkan modul programmu ke testnet Sui.
-- `--gas-budget 100000000` adalah biaya maksimum gas yang disediakan untuk proses publish. Pastikan kamu memiliki cukup saldo SUI di wallet testnet-mu.
+- `--gas-budget 100000000` adalah biaya maksimum gas yang disediakan untuk proses publish. biaya tersebut dihitung menggunakan MIST yaitu satuan terkecil dari SUI
+- 100000000 MIST = 1 SUI
 
 Setelah proses deploy selesai dan berhasil, program Coin Flip-mu sudah siap untuk diuji di jaringan Sui testnet.  
 Kamu bisa melanjutkan ke tahap pengujian dan eksplorasi lebih lanjut!

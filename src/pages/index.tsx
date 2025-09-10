@@ -74,21 +74,6 @@ export default function Home(): JSX.Element {
       </Head>
 
       <div className="landing">
-        {/* Navbar khusus landing */}
-        <nav className="landing-navbar">
-          <div className="landing-navbar-container">
-            <div className="landing-navbar-links">
-              <a href="#home" className="landing-navbar-link">
-                Home
-              </a>
-              {/* Link Academy langsung ke intro docs */}
-              <Link to={docsHomePath} className="landing-navbar-link">
-                Academy
-              </Link>
-            </div>
-          </div>
-        </nav>
-
         {/* Hero Section */}
         <section id="home" className="landing-hero">
           <div className="landing-hero-content">

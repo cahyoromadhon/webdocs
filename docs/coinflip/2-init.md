@@ -6,6 +6,9 @@ Untuk memulai, buka terminal dan jalankan perintah berikut:
 
 ```bash
 sui move new coinflip
+```
+
+```bash
 cd coinflip
 ```
 

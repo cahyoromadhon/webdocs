@@ -37,7 +37,9 @@ module coinflip::coinflip {
 }
 ```
 
----
+> **Note:**
+> Kode lengkap Coin Flip ini juga tersedia di repositori GitHub penulis pada folder `program18`
+> [github.com/cahyoromadhon/basic-move](https://github.com/cahyoromadhon/basic-move/tree/main/program18)
 
 Dengan menyelesaikan tutorial ini, kamu telah:
 - Mengenal struktur dan workflow project Move di Sui.

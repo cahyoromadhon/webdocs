@@ -1,3 +1,24 @@
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: row !important;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section p {
+    font-size: 14px;
+    margin-bottom: 18px;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
 /* Sembunyikan navbar/footer default Docusaurus hanya di halaman landing */
 .landing-page .navbar,
 .landing-page .footer {
@@ -5,6 +26,8 @@
 }
 
 /* Root scope: semua style landing di-namespace agar tidak ganggu halaman lain */
+
+/* DARK MODE DEFAULT */
 .landing {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
@@ -12,6 +35,82 @@
   margin: 0;
   padding: 0;
   line-height: 1.6;
+}
+.landing-hero {
+  background: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+.bubble {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.about-column h3,
+.about-column p {
+  color: #cccccc;
+}
+.portfolio {
+  background-color: #121212;
+}
+
+/* LIGHT MODE OVERRIDE */
+html[data-theme="light"] .landing {
+  background: linear-gradient(135deg, #f5f7f8 0%, #ffffff 100%);
+  color: #23242a;
+}
+html[data-theme="light"] .landing-hero {
+  background: linear-gradient(135deg, #f5f7f8 0%, #ffffff 100%);
+}
+html[data-theme="light"] .bubble {
+  background: linear-gradient(135deg, #ffffff 60%, #f5f7f8 100%);
+  color: #23242a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  border-left: 2px solid #ff4d4d;
+}
+html[data-theme="light"] .about-column h3,
+html[data-theme="light"] .about-column p {
+  color: #444;
+}
+html[data-theme="light"] .portfolio {
+  background: linear-gradient(135deg, #f5f7f8 0%, #ffffff 100%);
+}
+html[data-theme="light"] .portfolio-card {
+  background: linear-gradient(135deg, #ffffff 60%, #f5f7f8 100%);
+  color: #23242a;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border-radius: 15px;
+  backdrop-filter: none;
+}
+html[data-theme="light"] .portfolio-card h3 {
+  color: #23242a;
+}
+html[data-theme="light"] .portfolio-card p {
+  color: #444;
+}
+html[data-theme="light"] .contact-section {
+  background: linear-gradient(135deg, #f5f7f8 0%, #ffffff 100%);
+  color: #23242a;
+}
+html[data-theme="light"] .contact-card {
+  background: linear-gradient(135deg, #ffffff 60%, #f5f7f8 100%);
+  color: #23242a;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border-radius: 15px;
+  backdrop-filter: none;
+}
+html[data-theme="light"] .contact-card i {
+  color: #23242a;
+}
+html[data-theme="light"] .contact-link {
+  color: #23242a;
+}
+html[data-theme="light"] .cta-button {
+  color: #ff4d4d;
+  border-color: #ff4d4d;
+  background: linear-gradient(135deg, #f5f7f8 0%, #ffffff 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+html[data-theme="light"] .cta-button:hover {
+  background: #ff4d4d;
+  color: #fff;
 }
 
 /* Smooth scroll */
@@ -21,14 +120,13 @@ html {
 
 /* Navbar khusus landing */
 .landing-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
+  position: static; 
   width: 100%;
   background-color: #1e1e1e;
   padding: 15px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  box-shadow: none;
+  z-index: 1;
 }
 
 .landing-navbar-container {
@@ -322,59 +420,95 @@ html {
   .landing-hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
   }
   .chat-column {
     align-items: center;
   }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
   .bubble {
-    max-width: 80%;
+    max-width: 95%;
+    font-size: 14px;
+    padding: 10px 12px;
   }
   .about-column {
     align-items: center;
+    gap: 8px;
   }
-  .about-judul {
-    display: none;
+  .about-column h1 {
+    font-size: 28px;
+  }
+  .about-column h3 {
+    font-size: 16px;
+  }
+  .about-column p {
+    font-size: 14px;
+    max-width: 95vw;
   }
   .cta-button {
     padding: 6px 15px;
+    font-size: 14px;
   }
   #cta-button-port {
-    display: none;
+    display: inline-block;
+  }
+  .portfolio {
+    padding: 30px 5px;
+  }
+  .portfolio h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 14px;
+  .portfolio-card {
+    padding: 10px;
+    border-radius: 10px;
   }
-  .landing-navbar-container {
-    justify-content: flex-start;
-    gap: 20px;
-    flex-wrap: nowrap;
-  }
-  .landing-navbar-links {
-    gap: 20px;
-  }
-  .landing-navbar-link {
+  .portfolio-card h3 {
     font-size: 16px;
   }
-  .landing-hero {
-    padding: 80px 10px 20px;
-  }
-  .portfolio {
-    padding: 60px 10px;
+  .portfolio-card p {
+    font-size: 13px;
   }
   .contact-section {
-    padding: 60px 10px;
+    padding: 30px 5px;
+  }
+  .contact-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .contact-section p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .contact-card {
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  .contact-link {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
   .landing-navbar {
-    padding: 10px 10px;
+    position: static !important;
+    padding: 22px 10px 28px 10px !important;
+    min-height: 70px !important;
   }
   .landing-navbar-container {
     gap: 10px;

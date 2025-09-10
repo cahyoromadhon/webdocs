@@ -12,6 +12,22 @@ public struct Flip has copy, drop, store {
 }
 ```
 
+**Penjelasan ability pada struct:**
+
+- **copy**
+  - Struct dapat disalin (copy) di memori, sehingga data bisa digunakan di beberapa tempat tanpa harus memindahkan kepemilikan.
+- **drop**
+  - Struct dapat dihapus (drop) dari memori tanpa harus dipindahkan ke tempat lain, sehingga lebih fleksibel dalam pengelolaan memori.
+- **store**
+  - Struct dapat disimpan di storage blockchain (global storage). Tanpa ability ini, struct tidak bisa disimpan secara permanen di blockchain.
+
+**Mengapa ketiganya digunakan pada struct `Flip`?**
+Struct `Flip` hanya berisi data sederhana (bukan resource), sehingga aman dan umum untuk diberikan ability `copy`, `drop`, dan `store`. Dengan begitu, struct ini bisa:
+- Disalin ke variabel lain tanpa masalah
+- Dihapus dari memori jika sudah tidak diperlukan
+- Disimpan di storage blockchain untuk pencatatan data taruhan
+Hal ini membuat struct lebih fleksibel dan mudah digunakan dalam berbagai operasi di smart contract.
+
 **Penjelasan:**
 
 - **player**  
