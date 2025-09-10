@@ -42,7 +42,7 @@ const config: Config = {
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
-      { redirects: [{ from: ['/docs'], to: '/docs/intro' }] },
+      { redirects: [{ from: ['/docs'], to: '/docs/academy' }] },
     ],
   ],
 
@@ -53,7 +53,7 @@ const config: Config = {
       // Jangan definisikan logo agar tidak muncul; kalau masih muncul, CSS akan menyembunyikannya.
       items: [
         { to: '/', label: 'Home', position: 'left' },
-        { to: '/docs/intro', label: 'Academy', position: 'left' },
+        { to: '/docs/academy', label: 'Academy', position: 'left' },
         // Tidak ada search bar
       ],
     },
