@@ -39,6 +39,7 @@ const sidebars: SidebarsConfig = {
         'Move on Sui Basics/How to Declare Variables and Constants',
         'Move on Sui Basics/What are the Different Data Types',
         'Move on Sui Basics/How Control Flow Works in Move on Sui',
+        'Move on Sui Basics/Move Expressions, Scope, and Operators',
       ],
     },
     {
@@ -91,6 +92,7 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       items: [
         'Challange/Challenge Create a Calculator Contract using Move',
+        'Challange/Solution Create a Calculator Contract using Move on Sui',
       ],
     },
     {

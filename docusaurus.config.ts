@@ -16,11 +16,11 @@ const config: Config = {
   projectName: 'webdocs',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
   presets: [
