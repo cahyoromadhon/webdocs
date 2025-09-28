@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Sui Surabaya Workshop',
+  title: 'cahyorom',
   tagline: 'Master Sui Blockchain Development',
   favicon: 'img/favicon.ico',
 
