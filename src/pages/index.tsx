@@ -12,8 +12,8 @@ export default function Home(): JSX.Element {
   const fontAwesomeHref =
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css';
 
-  // Link "Academy" diarahkan langsung ke halaman intro docs (aman & pasti ada)
-  const docsHomePath = useBaseUrl('/docs/intro');
+  // Link "Academy" diarahkan langsung ke halaman academy docs
+  const docsHomePath = useBaseUrl('/docs/academy');
 
   useEffect(() => {
     // Animasi bubble
